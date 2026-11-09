@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gold Saving Book - Gold Accumulation & Portfolio Simulator</title>
+    <meta name="description" content="Gold Saving Book is the ultimate gold accumulation, DCA simulation, and physical gold portfolio visualizer for smart gold investors.">
+    <style>
+        :root {
+            --bg-color: #0d0d0d;
+            --card-bg: #1a1815;
+            --primary-gold: #f59e0b;
+            --gold-light: #fbbf24;
+            --text-main: #f9fafb;
+            --text-muted: #9ca3af;
+            --border-color: #374151;
+            --accent-green: #10b981;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(180deg, #1f1a0e 0%, #0d0d0d 100%);
+            padding: 60px 20px 40px;
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .icon-badge {
+            width: 80px;
+            height: 80px;
+            background: var(--primary-gold);
+            border-radius: 20px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            box-shadow: 0 10px 20px rgba(245, 158, 11, 0.3);
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: var(--gold-light);
+            font-size: 2.8rem;
+            margin: 10px 0;
+            font-weight: 800;
+        }
+
+        .tagline {
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1f));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 14px;
+            padding: 24px;
+            transition: transform 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            border-color: var(--primary-gold);
+        }
+
+        .card h3 {
+            color: var(--gold-light);
+            margin-top: 0;
+            font-size: 1.2rem;
+        }
+
+        .card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 0;
+        }
+
+        .links-section {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 14px;
+            padding: 30px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--primary-gold);
+            color: #000;
+            padding: 12px 28px;
+            border-radius: 10px;
+            font-weight: bold;
+            text-decoration: none;
+            margin: 10px;
+            transition: background 0.2s;
+        }
+
+        .btn:hover {
+            background: var(--gold-light);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--gold-light);
+            border: 1px solid var(--primary-gold);
+        }
+
+        .btn-outline:hover {
+            background: rgba(245, 158, 11, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            border-top: 1px solid var(--border-color);
+            margin-top: 60px;
+        }
+
+        footer a {
+            color: var(--gold-light);
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="icon-badge">📈</div>
+        <h1>Gold Saving Book</h1>
+        <div class="tagline">Sổ Tích Trữ Vàng • Gold Accumulation & Portfolio Visualizer</div>
+        <div>
+            <a href="privacy_policy.html" class="btn">Privacy Policy</a>
+            <a href="terms_of_service.html" class="btn btn-outline">Terms of Service</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2 style="text-align: center; color: var(--gold-light);">Key Features</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>💰 Dollar-Cost Averaging (DCA)</h3>
+                <p>Simulate monthly gold accumulation plans in Troy Ounces, Grams, or local units over 5, 10, or 20-year horizons.</p>
+            </div>
+            <div class="card">
+                <h3>📊 Gold Portfolio Tracking</h3>
+                <p>Record past physical gold purchases (rings, bars, coins) and monitor real-time buy-back valuation & P&L.</p>
+            </div>
+            <div class="card">
+                <h3>⚡ Realistic Market Scenarios</h3>
+                <p>Test your financial strategy under war crises, inflation waves, or random market events with realistic bid-ask spreads.</p>
+            </div>
+            <div class="card">
+                <h3>🔒 Privacy-First Storage</h3>
+                <p>All transaction logs and custom simulations are stored 100% locally on your device's memory.</p>
+            </div>
+        </div>
+
+        <div class="links-section">
+            <h3 style="color: var(--gold-light); margin-top: 0;">Legal & Transparency</h3>
+            <p>We are committed to data transparency, user privacy, and realistic financial simulation guidelines.</p>
+            <div style="margin-top: 20px;">
+                <a href="privacy_policy.html" class="btn btn-outline">Read Privacy Policy</a>
+                <a href="terms_of_service.html" class="btn btn-outline">Read Terms of Service</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Gold Saving Book (<code>com.goldapp.simulate</code>). All rights reserved.</p>
+        <p>
+            <a href="index.html">Home</a> |
+            <a href="privacy_policy.html">Privacy Policy</a> |
+            <a href="terms_of_service.html">Terms of Service</a>
+        </p>
+    </footer>
+
+</body>
+</html>
